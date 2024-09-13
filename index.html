@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SPASS</title>
+</head>
+<body>
+    <h2 id = "t1">Список гиперссылок</h2>
+    <ul>
+        <li><a href="http://kubsu.ru">абсолютнуая cсылочка на кубик http</a></li> 
+        <li><a href="https://kubsu.ru">абсолютнуая ссылочка2 на кубик https</a></li>
+        <li>
+          <a href="https://i.pinimg.com/originals/b1/02/dc/b102dcda56577ee8b860b89dadf0f4c0.jpg" target="_blank">
+            <img src="фотки/13.jpg" width="250">
+        </a>
+        </li>
+        <li><a href="vnytr.html">cокращенная ссылкa на внутреннюю страницу</a></li>
+        <li><a href="index.html">cокращенная ссылкa на главную страницу</a></li>
+        <li><a href="#t1">Ссылк на фрагмент</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/IPhone">Ссылка c 3 параметрами url</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/IPhone">ссылка с параметром id в URL</a></li>
+        <li><a href="vnytr.html">относительная на страницу в текущем каталоге</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/about/index.html">относительная на страницу в каталоге about</a></li>
+        <li><a href="1 уровень/first.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="1 уровень/2 уровень/second.html">относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+        <li>контекстная в <a href="#">тексте</a> абзаца</li>  
+        <li><a href="https://ru.wikipedia.org/wiki/SETI">ссылкa на фрагмент страницы стороннего сайта</a></li>
+        <li><img src="фотки/12.jpg" width="400" height="200" usemap="#map"alt ="Фоточка с ссылками"></li>
+        <p><map name="map">
+          <area shape="rect" alt="Закладка 2" 
+          coords="`100,80,200,140" 
+          href="https://steamuserimages-a.akamaihd.net/ugc/1857175307721688347/0C8A31156E25AB955C983EAF0176E65C8AAAEA18/?imw=512&amp;imh=512&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true">
+          <area shape="circle" alt="Закладка 3" 
+          coords="262,110,40" href="https://yt3.googleusercontent.com/OGccTpmxGlBDrWzmqqwqgqV_w1GjfquCXVTwHdNXHwybWt_f7YlC-q8i5SjRF-u5JSL6ayPy7A=s900-c-k-c0x00ffffff-no-rj">
+        </map></p>
+          <li><a href="">ссылкa с пустым href</a></li>
+          <li><a>ссылкa без href</a></li>
+          <li><a href="https://www.example.com" rel="nofollow">ссылкa, по которой запрещен переход поисковикам</a></li>
+          <li>
+            <ol>
+                <li>title</li>
+                <li>title</li>
+                <li>title</li>
+                <li>title</li>
+            </ol>
+         </li>
+          <li><a href="ftp://user:pass123@site.ru/Temp/file.txt"></a></li>
+          <form action="" method="get">
+            <p>
+              <label for="name">Введите ФИО:</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="tel">Введите телефон:</label>
+                <input type="tel" name="tel" id="tel" required>
+              </p>
+            <p>
+              <label for="email">Введите email:</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="date">Введите дату рождения:</label>
+                <input type="date" name="date" id="date" required>
+              </p>
+              <legend>Выберите пол</legend>
+                <label>
+                <input type="radio" name="level">
+                МУЖ
+                </label>
+                <label>
+                <input type="radio" name="level"checked>
+                ЖЕН
+                </label>
+                <label>
+                <input type="radio" name="level">
+                ОПТИМУС ПРАЙМ
+                </label>
+                <br>
+            <button type="submit">Отправить</button>
+          </form>
+          
+    </ul>
+</body>
+</html>
